@@ -1,7 +1,13 @@
-import { client } from './client';
+import { client } from './client.js';
 
 export async function getBooks() {
   const response = await client.from('books').select('*');
 
-  return response.body;
+  return response.data;
+}
+
+export async function getAlbums() {
+  const response = await client.from('albums').select('*');
+
+  return response.data;
 }
