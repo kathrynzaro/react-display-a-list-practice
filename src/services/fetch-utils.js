@@ -11,3 +11,9 @@ export async function getAlbums() {
 
   return response.data;
 }
+
+export async function getMovies() {
+  const response = await client.from('movies').select('*');
+
+  return response.data;
+}
