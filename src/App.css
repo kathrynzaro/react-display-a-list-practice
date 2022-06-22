@@ -7,12 +7,12 @@
   color: antiquewhite;
 }
 
-.books-list, .albums-list, .movies-list {
+.books-list, .albums-list, .movies-list, .shows-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.book, .album, .movie {
+.book, .album, .movie, .show {
   background-color: black;
   color: black;
   border-radius: 15px;

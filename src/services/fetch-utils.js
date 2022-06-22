@@ -17,3 +17,9 @@ export async function getMovies() {
 
   return response.data;
 }
+
+export async function getShows() {
+  const response = await client.from('shows').select('*');
+
+  return response.data;
+}
